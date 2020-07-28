@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+
+<form id="login-form" action="/users/login" method="POST">
+    <!-- LOGIN -->
+    <div class="account block">
+
+        <h2 class="titular">SIGN IN TO YOUR ACCOUNT</h2>
+        <div class="input-container">
+            <input type="email" placeholder="yourname@gmail.com" class="email text-input" name="email">
+            <div class="input-icon envelope-icon-acount"><span class="fontawesome-envelope scnd-font-color"></span>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="password" placeholder="Password" class="password text-input" name="password">
+            <div class="input-icon password-icon"><span class="fontawesome-lock scnd-font-color"></span></div>
+        </div>
+        <a id="login-btn" class="sign-in button">SIGN IN</a>
+    </div>
+</form>
+<script type="text/javascript">
+    var form = document.getElementById("login-form");
+    document.getElementById("login-btn").addEventListener("click", submitform);
+
+    function handleLoginResponse(res) {
+        console.log(res);
+        if (res.success) {
+            localStorage.setItem("token", res.data.token);
+            if (res.data.redirect) {
+                window.location.href = res.data.redirect;
+            }
+        }
+    }
+
+    function submitform() {
+        var object = {};
+        var formData = $("#login-form").serializeArray();
+        formData.forEach(function (entry) {
+            object[entry.name] = entry.value;
+        });
+        formData = JSON.stringify(object);
+        $.ajax({
+            type: "POST",
+            url: "/users/login",
+            data: formData,
+            success: handleLoginResponse,
+            dataType: "json",
+            contentType: "application/json",
+        });
+    }
+</script>
+<%- include('partials/footer') %>

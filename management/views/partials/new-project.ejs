@@ -1,0 +1,104 @@
+<form id="new-project-form">
+    <div id="new-project" class="container right-container">
+        <h2 class="titular">Create a new Project</h2>
+        <div class="flex-container">
+            <div class="column-2">
+                <div class="input-container">
+                    <input type="text" placeholder="Project name" class="email text-input" name="name">
+                    <div class="input-icon envelope-icon-acount"><span
+                            class="fontawesome-envelope scnd-font-color fas fa-cogs"></span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Target protocol" class="email text-input" name="protocol">
+                    <div class="input-icon envelope-icon-acount"><span
+                            class="fontawesome-lock scnd-font-color fas fa-door-open"></span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="text" placeholder="Target host" class="email text-input" name="host">
+                    <div class="input-icon envelope-icon-acount"><span
+                            class="fontawesome-envelope scnd-font-color fas fa-home"></span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="number" placeholder="Target port" class="email text-input" name="port">
+                    <div class="input-icon envelope-icon-acount"><span
+                            class="fontawesome-envelope scnd-font-color"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="column-2">
+                <h2 class="titular">Project Configuration</h2>
+                <div class="flex-container">
+                    <div class="column-2">
+
+                        <div class="input-container">
+                            <input type="text" placeholder="Configuration name" class="password text-input"
+                                name="configuration[name]">
+                            <div class="input-icon password-icon"><span class="fontawesome-lock scnd-font-color"></span>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="text" placeholder="Client protocol" class="email text-input"
+                                name="configuration[clientProtocol]">
+                            <div class="input-icon envelope-icon-acount"><span
+                                    class="fontawesome-lock scnd-font-color fas fa-door-open"></span>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" placeholder="Client host" class="password text-input"
+                                name="configuration[clientHost]">
+                            <div class="input-icon password-icon"><span
+                                    class="fontawesome-lock scnd-font-color fas fa-home"></span>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="number" placeholder="Client port" class="password text-input"
+                                name="configuration[clientPort]">
+                            <div class="input-icon password-icon"><span class="fontawesome-lock scnd-font-color"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column-2">
+
+                        <div class="input-container">
+                            <input type="text" placeholder="Core protocol" class="password text-input"
+                                name="configuration[coreProtocol]">
+                            <div class="input-icon password-icon"><span
+                                    class="fontawesome-lock scnd-font-color fas fa-door-open"></span>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="text" placeholder="Core host" class="password text-input"
+                                name="configuration[coreHost]">
+                            <div class="input-icon password-icon"><span
+                                    class="fontawesome-lock scnd-font-color fas fa-home"></span>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="number" placeholder="Core port" class="password text-input"
+                                name="configuration[corePort]">
+                            <div class="input-icon password-icon"><span class="fontawesome-lock scnd-font-color"></span>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="text" placeholder="blocking mode" class="password text-input"
+                                name="configuration[blockingMode]">
+                            <div class="input-icon password-icon"><span
+                                    class="fontawesome-lock scnd-font-color fas fa-shield-virus"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="new-project-button" class="sign-in button" href="#22" onclick="submitform()">Create</a>
+    </div>
+</form>

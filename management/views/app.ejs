@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+
+<%- include('partials/menu-header') %>
+
+<%- include('partials/menu-aside') %>
+
+<main>
+
+    <div id="welcome" class="left-container">
+        <div id="projects" class="weather block clear">
+            <h2 class="titular"><span class="icon entypo-location"></span><strong>Projects</strong></h2>
+            <ul id="projects-list" class="next-days">
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="project" class="tweets block">
+
+    </div>
+
+    <div id="messages" class="weather block clear">
+        <h2 class="titular"><span class="icon entypo-location"></span><strong>Messages</strong></h2>
+        <ul id="messages-list" class="next-days">
+
+        </ul>
+    </div>
+
+    <%- include('partials/new-project') %>
+
+    <div id="project-failed">
+        <p>Project creation failed.</p>
+    </div>
+
+</main>
+<div class="loader"></div>
+<script type="text/javascript" src="/js/script.js"></script>
+
+<%- include('partials/footer') %>

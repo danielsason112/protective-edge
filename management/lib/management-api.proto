@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package api;
+
+service ManagementAPI {
+    rpc newMaliciousRequest (NMRMessage) returns (Pong) {
+    }
+    rpc ping (Ping) returns (Pong) {
+    }
+}
+message Ping {
+
+}
+
+message Pong {
+
+}
+
+message NMRMessage {
+    int64 timestamp = 0;
+    string type = 1;
+    string projectId = 2;
+}

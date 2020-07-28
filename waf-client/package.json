@@ -1,0 +1,25 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "Revese proxy for tunnling traffic",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node ./index.js",
+    "dev": "node ./index.js"
+  },
+  "author": "Daniel Sasson",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.3",
+    "chai-http": "^4.3.0",
+    "download-git-repo": "^3.0.2",
+    "grpc": "^1.24.2",
+    "node-schedule": "^1.3.2",
+    "utils-merge": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0"
+  }
+}
