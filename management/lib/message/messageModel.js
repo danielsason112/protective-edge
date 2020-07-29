@@ -1,5 +1,13 @@
+/**
+ * Module dependencies.
+ * @private
+ */
 var mongoose = require("mongoose");
 
+/**
+ * Module variables.
+ * @private
+ */
 var messageSchema = new mongoose.Schema({
     topic: String,
     isSeen: Boolean,

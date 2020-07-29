@@ -1,3 +1,7 @@
+/**
+ * Module dependencies.
+ * @private
+ */
 var mongoose = require("mongoose");
 var Configuration = require("./configurationModel");
 

@@ -1,3 +1,7 @@
+/**
+ * Module dependencies.
+ * @private
+ */
 var userService = require("./userService");
 var responseMessageFactory = require("../responseMessage").ResponseMessageFactory;
 var userFactory = require("./userFactory");
@@ -30,7 +34,9 @@ exports.register = async (req, res) => {
 
     await userService.createUser(newUser)
         .then((newUser) => {
-            res.send(responseMessageFactory.createSuccessful({ user: newUser.toReflectedObject() }));
+            res.send(responseMessageFactory.createSuccessful({
+                user: newUser.toReflectedObject()
+            }));
         })
         .catch((err) => {
             return res.send(responseMessageFactory.createUnsuccessful(err.toString()));

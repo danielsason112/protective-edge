@@ -1,3 +1,7 @@
+/**
+ * Module dependencies.
+ * @private
+ */
 var mongoose = require("mongoose");
 
 var configurationSchema = new mongoose.Schema({
