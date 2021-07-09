@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/danielsason112/waf">
+  <a href="https://github.com/danielsason112/protective-edge">
     <img src="https://image.flaticon.com/icons/png/512/1273/1273994.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -55,7 +55,7 @@
 ## About The Project
 
 <p>
-    <img src="https://github.com/danielsason112/waf/blob/master/images/image16.png?raw=true" alt="Logo" width="600">
+    <img src="https://github.com/danielsason112/protective-edge/blob/master/images/image16.png?raw=true" alt="Logo" width="600">
 </p>
 
 This project describes a web application firewall designated to identify and block attacks on websites and web applications. The system is designed to answer cyber security risks in web servers, and prevent business and image related damage, or sensitive information leaks and other dangers related to cyber attacks. The system contains three subsystems, it is container based (docker) and supports running on Linux operating systems. The three subsystems are a client-side system responsible for transferring all communication, analysis system which is responsible for identifying attacks and a management system. In this project, the client-side, working as a reverse-proxy, and the management system, allowing system deployment and status updates, were developed. As the analysis system is not a part of this project, a mock-system was developed in order to execute operations that require integration with the analysis system.
@@ -90,7 +90,7 @@ The System contains three subsystems:
 3. Managment - <strong>Web Application</strong> for managing services.
 
 <p>
-    <img src="https://github.com/danielsason112/waf/blob/master/images/image2.png?raw=true" alt="Logo" width="600">
+    <img src="https://github.com/danielsason112/protective-edge/blob/master/images/image2.png?raw=true" alt="Logo" width="600">
 </p>
 
 ## Getting Started
@@ -122,27 +122,27 @@ Open the browser at [http://localhost:5000](http://localhost:5000) and sign in.
 
 Click New Project and fill in your web app details (you can use [WebGoat 8.0](https://github.com/WebGoat/WebGoat)):
 <p>
-    <img src="https://github.com/danielsason112/waf/blob/master/images/image32.png?raw=true" alt="Logo" width="600">
+    <img src="https://github.com/danielsason112/protective-edge/blob/master/images/image32.png?raw=true" alt="Logo" width="600">
 </p>
 
 Choose the created project in the Project page:
 <p>
-    <img src="https://github.com/danielsason112/waf/blob/master/images/image16.png?raw=true" alt="Logo" width="600">
+    <img src="https://github.com/danielsason112/protective-edge/blob/master/images/image16.png?raw=true" alt="Logo" width="600">
 </p>
 
 Click Deploy:
 <p>
-    <img src="https://github.com/danielsason112/waf/blob/master/images/image39.png?raw=true" alt="Logo" width="600">
+    <img src="https://github.com/danielsason112/protective-edge/blob/master/images/image39.png?raw=true" alt="Logo" width="600">
 </p>
 
 To stop the service click Kill:
 <p>
-    <img src="https://github.com/danielsason112/waf/blob/master/images/image35.png?raw=true" alt="Logo" width="600">
+    <img src="https://github.com/danielsason112/protective-edge/blob/master/images/image35.png?raw=true" alt="Logo" width="600">
 </p>
 
 Any found threads and blocked requests will appear in the Messages page:
 <p>
-    <img src="https://github.com/danielsason112/waf/blob/master/images/image3.png?raw=true" alt="Logo" width="600">
+    <img src="https://github.com/danielsason112/protective-edge/blob/master/images/image3.png?raw=true" alt="Logo" width="600">
 </p>
 
 
@@ -159,7 +159,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Daniel Sason - danielsason112@gmail.com
 
-Project Link: [https://github.com/danielsason112/waf/](https://github.com/danielsason112/waf/)
+Project Link: [https://github.com/danielsason112/protective-edge/](https://github.com/danielsason112/protective-edge/)
 
 
 
